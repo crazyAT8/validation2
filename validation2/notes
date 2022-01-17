@@ -1,0 +1,47 @@
+from YouTube: "#26 Form Validations in JavaScript"
+URL https://www.youtube.com/watch?v=PAUxi3f9HB0&t=619s
+
+if you were to
+    remove the form tags
+        the button would not work
+            and the page would not refresh
+
+if you were to change
+    the type attribute value to button 
+        and not submit
+            the page would not refresh
+
+if you were to type nothing but spaces
+    in both the password and username
+        it would still validate
+            to kill the white space
+                we us the .trim() method on value
+                    which is a JavaScript String Method
+
+you could us required 
+    at the end of the html input tags
+        but it would still allow white space
+            which is a blank value
+
+video 2 
+    we are going to require 
+        a certain length
+
+we could use the or opporators
+    shown here:
+
+if(username.value.trim() == "" ||password.value.trim() == ""){
+    alert("No blank values allowed");
+    return false
+}else {
+    true;
+
+            but then we couldn't see
+                which input had the error
+                    and we couldn't make
+                        particular messages 
+                            for each indescresion
+
+now we are going to add
+    a red border around the invalid entry
+        using css
